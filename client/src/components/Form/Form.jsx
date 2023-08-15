@@ -3,28 +3,28 @@ import { useState } from 'react';
 
 const Login = ({login, signUp}) => {
 
-  const [dni, setDni] = useState("");
-  const [showLoginForm, setShowLoginForm] = useState(null); // Cambiado a null
+  const [dni, setDni] = useState(""); // Estado local que se utilizara para enviar el dni requerido para registrarse o ingresar.
+  const [showLoginForm, setShowLoginForm] = useState(null); // Estado local para setear el campo correcto y mostrarlo en pantalla.
 
-  const handleChange = (event) => {
-    setDni(event.target.value);
+  const handleChange = (event) => {   // Funcion para setear el estado local con el campo para ingresar
+    setDni(event.target.value);       // utilizamos event.target.value para controlar el estado.
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    login(dni);
+  const handleSubmit = (event) => {   // Funcion para enviar el estado local a la funcion que se le pasa por parametro
+    event.preventDefault();           // login. Se llama a preventDefault para que cuando se envia el formulario no
+    login(dni);                       // se refresque la pagina automaticamente. Se envia y luego se resetea el estado local.
     setDni("");
   };
 
-  const handleFormToggle = (event) => {
+  const handleFormToggle = (event) => {  // Funcion para mostrar el campo a rellenar, ya sea login o signup.
     setShowLoginForm(event.target.name); // Cambiado a solo el nombre del botón
-    setDni(""); // Resetear el valor del input al cambiar entre formularios
+    setDni("");                          // Resetear el valor del input al cambiar entre formularios
   };
 
-  const handleSignUpSubmit = (event) => {
-    event.preventDefault();
-    signUp(dni)
-    // Después de un registro exitoso, podrías cambiar automáticamente al formulario de inicio de sesión
+  const handleSignUpSubmit = (event) => { // Funcion para enviar el formulario con la funcion para registrarse.
+    event.preventDefault(); // Después de un registro exitoso, 
+    signUp(dni)             //se podría cambiar automáticamente al formulario de inicio de sesión
+    
     setShowLoginForm("showLogin"); // Cambiado a "showLogin"
     setDni(""); // Resetear el valor del input después de registrarse
   };
