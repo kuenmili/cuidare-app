@@ -1,0 +1,54 @@
+.blogMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainButtons{
+    display: flex;
+    align-items: center;
+    background-color: #4a63b6;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    border: transparent;   
+}
+
+.mainButtons:hover{
+    cursor: pointer;
+    background-color: #2d4db8;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 0.625rem;
+    box-shadow: 0px -4px 21px -1px rgba(0, 0, 0, 0.25);
+}
+
+.img{
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.input{
+    border: none;
+    margin: 8px;
+}
+
+.inputArea{
+    border: none;
+    margin: 8px;
+    width: 100%;
+    height: 20vh;
+}

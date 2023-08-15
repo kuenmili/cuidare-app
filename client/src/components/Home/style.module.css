@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0 0 20px;
+    
+    
+}
+.notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+    width: 80%;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+    color: #2c2c5e;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.blog{
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+.note{
+    width: 16rem;
+    height: auto;
+    border-radius: 0.625rem;
+    background: #EFEFEF;
+    box-shadow: 0px -4px 21px -1px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.img{
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 15px;
+}
+
+
+.combination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainButtons{
+    display: flex;
+    align-items: center;
+    background-color: #4a63b6;
+    color: white;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 15px;
+    border: transparent; 
+    padding:  3px; 
+}
+.mainButtons:hover{
+    cursor: pointer;
+    background-color: #2d4db8;
+}
+.deleteBtn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(161, 159, 159);
+    color: white;
+    margin: 5px;
+    border-radius: 3px;
+    border: transparent; 
+    padding:  3px; 
+}
+.deleteBtn:hover{
+    cursor: pointer;
+    background-color: #f52727;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-family:sans-serif;
+    color: #2c2c5e;
+}
+
+p{
+    font-family:sans-serif;
+
+}
+
+.input{
+    border: none;
+    margin: 8px;
+}
+
+.inputArea{
+    border: none;
+    margin: 8px;
+    width: 100%;
+    height: 20vh;
+}
+
+.activePage{
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
